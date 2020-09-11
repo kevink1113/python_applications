@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import requests
 import webbrowser
 
-url = 'https://www.daum.net/' #url 선언
 response = requests.get("https://news.naver.com/main/ranking/popularDay.nhn")
 
 soup = BeautifulSoup(response.content, "html.parser")
